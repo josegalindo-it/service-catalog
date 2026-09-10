@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="page_title">Jose Galindo IT Service Delivery & Governance Leader</title>
+    <title data-i18n="page_title">José Galindo IT Service Delivery & Governance Leader</title>
     <style>
         :root {
             --primary: #0f172a;
@@ -40,7 +40,7 @@
             color: #ffffff;
             padding: 80px 20px 60px;
             text-align: center;
-            position: relative; /* Añadido para posicionar el selector de idioma */
+            position: relative;
         }
 
         /* --- Language Switcher --- */
@@ -413,14 +413,14 @@
     </main>
 
     <footer id="contact">
-        <p>&copy; 2026 - Jose Galindo IT Service Delivery & Governance Leader. All rights reserved.</p>
+        <p>&copy; <span id="current-year"></span> - José Galindo IT Service Delivery & Governance Leader. All rights reserved.</p>
     </footer>
 
-    <!-- Script de Internacionalización (i18n) -->
+    <!-- Script de Internacionalización (i18n) y Funciones Dinámicas -->
     <script>
         const translations = {
             es: {
-                page_title: "Jose Galindo IT Service Delivery & Governance Leader",
+                page_title: "José Galindo IT Service Delivery & Governance Leader",
                 badge: "Estrategia & Operaciones IT",
                 title: "IT Service Delivery & Governance Leader",
                 subtitle: "Liderando la transformación digital, la excelencia operativa e implementación de marcos de gobierno ITIL/COBIT para maximizar el valor de negocio.",
@@ -441,7 +441,7 @@
                 section_certs: "Certificaciones Profesionales"
             },
             en: {
-                page_title: "Jose Galindo IT Service Delivery & Governance Leader",
+                page_title: "José Galindo IT Service Delivery & Governance Leader",
                 badge: "IT Strategy & Operations",
                 title: "IT Service Delivery & Governance Leader",
                 subtitle: "Leading digital transformation, operational excellence, and the implementation of ITIL/COBIT governance frameworks to maximize business value.",
@@ -484,10 +484,14 @@
             localStorage.setItem('preferredLang', lang);
         }
 
-        // Inicializar el idioma al cargar la página
+        // Inicializar al cargar la página
         document.addEventListener('DOMContentLoaded', () => {
+            // 1. Configurar el idioma
             const savedLang = localStorage.getItem('preferredLang') || 'es';
             setLanguage(savedLang);
+
+            // 2. Establecer el año actual en el pie de página
+            document.getElementById('current-year').textContent = new Date().getFullYear();
         });
     </script>
 </body>
