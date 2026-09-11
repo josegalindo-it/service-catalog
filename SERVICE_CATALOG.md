@@ -215,6 +215,17 @@ El contenido de las tarjetas **no está traducido** (mismo texto en ambos idioma
 |---|---|
 | PMP® - Project Management Professional | Project Management Institute | 03/2026 |
 | ITIL 4 Managing Professional | AXELOS Global Best Practice | 12/2025 |
+
+---
+
+## 5.b Metodologias Profesionales
+
+Título de sección (`section_metodos`): ES *"Metodologías Profesionales"* / EN *"Professional Methods"*.
+El contenido de las tarjetas **no está traducido** (mismo texto en ambos idiomas):
+
+| Certificación | Entidad emisora | Obtenida | 
+|---|---|
+| Agile / Scrum | Project Management Professional | - |
 | COBIT 2019 Foundation | ISACA | - |
 | CRISC - Risk and Information Systems Control | ISACA | - |
 
